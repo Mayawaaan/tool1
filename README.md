@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+Thus, unless you add project-specific code, it serves as a starting template for building a React + Vite application.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Folder and File Structure
 
-Currently, two official plugins are available:
+Based on directory listing: 
+GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+tool1/
+├── public/
+├── src/
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── package-lock.json
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+src/ — Application source code. 
+GitHub
 
-## Expanding the ESLint configuration
+public/ — Static assets (may contain icons, favicons, etc.). 
+GitHub
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+index.html — Entry HTML. 
+GitHub
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Configuration files for ESLint, Tailwind CSS, TypeScript, Vite. 
+GitHub
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Interpreting the Current Contents
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+At present, the repository contains no specific image compression logic or features — it is the React/TypeScript/Vite starter project template, suggesting that the image compressor tool still needs implementation within this scaffold. 
+GitHub
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Suggested README Documentation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Here is a structured summary you can use to rewrite or expand the current README:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+README Template (You Can Use)
+Title
+Image Compressor Tool (React + TypeScript + Vite)
+
+Description
+
+A frontend web application scaffold intended for building an interactive Image Compressor Tool. This base project uses React, TypeScript, and Vite, and is ready to be extended with image compression capabilities such as resizing, quality adjustment, or format conversion.
+
+Features (To Implement)
+
+Upload image files (JPEG, PNG, WebP, GIF, etc.)
+
+Client-side image compression
+
+Preview original vs compressed images
+
+Adjustable quality/size settings
+
+Download optimized images locally
+
+Installation
+git clone https://github.com/Mayawaaan/tool1.git
+cd tool1
+npm install
+
+Development
+npm run dev
+
+
+Open the application in a browser at http://localhost:3000 (default Vite port).
+
+Build
+npm run build
+
+
+Outputs a production bundle to dist/.

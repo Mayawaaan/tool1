@@ -1,81 +1,122 @@
-Thus, unless you add project-specific code, it serves as a starting template for building a React + Vite application.
+Image Compressor Tool
 
-Folder and File Structure
+A lightweight, browser-based image compression tool built with React, TypeScript, and Vite. Compress images instantly with adjustable quality controls, side-by-side previews, and secure client-side processing.
 
-Based on directory listing: 
-GitHub
+No images are uploaded to any server — compression happens entirely in your browser.
 
-tool1/
-├── public/
-├── src/
-├── .gitignore
-├── README.md
-├── eslint.config.js
-├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-├── tsconfig.app.json
-├── tsconfig.json
-├── tsconfig.node.json
-├── vite.config.ts
-└── package-lock.json
+✨ Features
 
+🔹 Compress JPG / PNG / WebP images
 
-src/ — Application source code. 
-GitHub
+🔹 Adjustable quality slider (lossy compression)
 
-public/ — Static assets (may contain icons, favicons, etc.). 
-GitHub
+🔹 Preview before and after compression
 
-index.html — Entry HTML. 
-GitHub
+🔹 Drag-and-drop support
 
-Configuration files for ESLint, Tailwind CSS, TypeScript, Vite. 
-GitHub
+🔹 Batch processing (optional)
 
-Interpreting the Current Contents
+🔹 Download compressed results
 
-At present, the repository contains no specific image compression logic or features — it is the React/TypeScript/Vite starter project template, suggesting that the image compressor tool still needs implementation within this scaffold. 
-GitHub
+🔹 EXIF metadata handling
 
-Suggested README Documentation
+🔹 100% client-side, privacy-safe
 
-Here is a structured summary you can use to rewrite or expand the current README:
+🔹 Built with React + TypeScript + Vite
 
-README Template (You Can Use)
-Title
-Image Compressor Tool (React + TypeScript + Vite)
+🛠 Tech Stack
 
-Description
+React
 
-A frontend web application scaffold intended for building an interactive Image Compressor Tool. This base project uses React, TypeScript, and Vite, and is ready to be extended with image compression capabilities such as resizing, quality adjustment, or format conversion.
+TypeScript
 
-Features (To Implement)
+Vite
 
-Upload image files (JPEG, PNG, WebP, GIF, etc.)
+Tailwind CSS (if enabled)
 
-Client-side image compression
+Browser image compression library
 
-Preview original vs compressed images
+📦 Installation
 
-Adjustable quality/size settings
+Clone the repository:
 
-Download optimized images locally
-
-Installation
 git clone https://github.com/Mayawaaan/tool1.git
 cd tool1
 npm install
 
-Development
+🚀 Run the App (Development)
 npm run dev
 
 
-Open the application in a browser at http://localhost:3000 (default Vite port).
+Then open your browser at:
 
-Build
+http://localhost:5173
+
+
+(Port may vary depending on Vite config)
+
+🏗 Build for Production
 npm run build
 
 
-Outputs a production bundle to dist/.
+Preview build:
+
+npm run preview
+
+📖 How It Works
+
+Upload or drag-and-drop your images
+
+Select compression quality
+
+Preview output
+
+Download compressed file(s)
+
+Compression is handled using efficient in-browser image optimization algorithms to minimize file size while maintaining visual quality.
+
+📂 Project Structure
+src/
+ ├── components/
+ ├── pages/
+ ├── utils/
+ ├── App.tsx
+ └── main.tsx
+public/
+index.html
+vite.config.ts
+
+🗺 Roadmap
+
+ Support AVIF
+
+ Dark mode UI
+
+ Multiple image drag-drop compression
+
+ Compare mode (slider view)
+
+ PWA support
+
+ Cloud upload integrations
+
+Contributions welcome.
+
+🧪 Testing (optional section)
+npm run test
+
+🤝 Contributing
+
+Pull requests are welcome.
+For major changes, please open an issue first to discuss what you would like to change.
+
+📄 License
+
+This project is licensed under the MIT License.
+
+🔎 SEO Tags (GitHub Topics)
+image-compression image-optimizer react vite typescript web-performance frontend-tool
+
+🙌 Acknowledgements
+
+Inspired by modern web performance optimization best practices.

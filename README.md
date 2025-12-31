@@ -110,9 +110,6 @@ npm run test
 Pull requests are welcome.
 For major changes, please open an issue first to discuss what you would like to change.
 
-📄 License
-
-This project is licensed under the MIT License.
 
 🔎 SEO Tags (GitHub Topics)
 image-compression image-optimizer react vite typescript web-performance frontend-tool
